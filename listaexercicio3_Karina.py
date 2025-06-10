@@ -112,7 +112,7 @@ import matplotlib.pyplot as plt
 df['Data'] = pd.to_datetime(dict(year=df["ano"], month=df["mes"], day=1))
 pd.to_datetime(df['Data'])
 df = df.sort_values('Data')
-df.plot(x='Data', y=['Projeto1', 'Projeto2', 'Projeto3', 'Projeto4', 'Projeto5', ax=ax])
+df.plot(x='Data', y=['Projeto1', 'Projeto2', 'Projeto3', 'Projeto4', 'Projeto5'])
 
 ax.figure(figsize=(10,6))
 ax.plot(
