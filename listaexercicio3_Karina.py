@@ -110,7 +110,8 @@ import matplotlib.pyplot as plt
 df['Data'] = pd.to_datetime(dict(year=df["ano"], month=df["mes"], day=1))
 pd.to_datetime(df['Data'])
 df = df.sort_values('Data')
+fig, ax = plt.subplots(figsize=(10, 6))
 df.plot(x='Data', y=['Projeto1', 'Projeto2', 'Projeto3', 'Projeto4', 'Projeto5'])
 
 
-ax.show()
+st.plot(fig)
