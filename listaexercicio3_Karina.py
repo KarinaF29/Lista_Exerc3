@@ -114,8 +114,8 @@ pd.to_datetime(df['Data'])
 df = df.sort_values('Data')
 df.plot(x='Data', y=['Projeto1', 'Projeto2', 'Projeto3', 'Projeto4', 'Projeto5', ax=ax])
 
-plt.figure(figsize=(10,6))
-plt.plot(
+ax.figure(figsize=(10,6))
+ax.plot(
     st.dataframe(df)['Data'],
     st.dataframe(df)['Projeto1'],
     st.dataframe(df)['Data'],
@@ -127,4 +127,4 @@ plt.plot(
     st.dataframe(df)['Data'],
     st.dataframe(df)['Projeto5']
 )
-plt.show()
+ax.show()
