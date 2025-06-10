@@ -66,12 +66,12 @@ Dicas:
 """
 
 def valor_presente(fluxo_caixa, taxa_juros):
-  st.write = pd.DataFrame()
-  st.write["Fluxo_Caixa"] = fluxo_caixa
-  st.write["Taxa_Juros"] = taxa_juros
-  st.write["Valor_Presente"] = df['Fluxo_Caixa'] - (df['Fluxo_Caixa'] * (df['Taxa_Juros']**df.index))
-  st.write["Valor_Presente_Formatado"] = df["Valor_Presente"].map("R$ {:,.2f}".format)
-  st.write(df)
+  st.dataframe = pd.DataFrame()
+  st.dataframe["Fluxo_Caixa"] = fluxo_caixa
+  st.dataframe["Taxa_Juros"] = taxa_juros
+  st.dataframe["Valor_Presente"] = df['Fluxo_Caixa'] - (df['Fluxo_Caixa'] * (df['Taxa_Juros']**df.index))
+  st.dataframe["Valor_Presente_Formatado"] = df["Valor_Presente"].map("R$ {:,.2f}".format)
+  st.dataframe(df)
 
 valor_presente([29376, 40392, 63648, 29376, 25704], 0.02)
 
